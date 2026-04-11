@@ -332,7 +332,11 @@ function App() {
           <div className="contact-row dark">
             <a href="mailto:gitavidy@gmail.com">gitavidy@gmail.com</a>
             <a href="tel:+6285867569060">085867569060</a>
-            <a href="https://wa.me/6285867569060" target="_blank" rel="noreferrer">
+            <a
+              href="https://wa.me/6285867569060"
+              target="_blank"
+              rel="noreferrer"
+            >
               WhatsApp Chat
             </a>
             <span>Purwokerto, Banyumas, Central Java</span>

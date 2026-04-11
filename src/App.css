@@ -82,10 +82,12 @@ body {
   border-radius: 999px;
   color: #2f4d4f;
   font-weight: 600;
+  transition: all 0.2s ease;
 }
 
 .topbar nav a:hover {
   background: #e7f2ee;
+  transform: translateY(-1px);
 }
 
 .hero {
@@ -166,6 +168,7 @@ h1 {
   font-weight: 700;
   font-size: 0.92rem;
   border: 1px solid transparent;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn-primary {
@@ -177,6 +180,11 @@ h1 {
   background: rgba(255, 255, 255, 0.12);
   color: #fff;
   border-color: rgba(255, 255, 255, 0.34);
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(7, 37, 35, 0.2);
 }
 
 .hero-panel {
@@ -243,6 +251,36 @@ h1 {
   color: #557071;
 }
 
+.highlight-band {
+  background: linear-gradient(120deg, #f6fbf9, #f7f2e8);
+  border: 1px solid #dfe8e3;
+  border-radius: 18px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 8px 18px rgba(16, 45, 43, 0.05);
+}
+
+.section-head.compact h2 {
+  margin-bottom: 8px;
+}
+
+.highlight-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.highlight-list p {
+  margin: 0;
+  padding: 12px;
+  background: #ffffff;
+  border: 1px solid #dce8e2;
+  border-radius: 12px;
+  color: #355457;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
 .contact-row {
   margin-top: 18px;
   display: flex;
@@ -272,6 +310,10 @@ h1 {
   color: #214846;
 }
 
+.contact-row.dark a:hover {
+  background: #dbefe8;
+}
+
 .content {
   display: grid;
   gap: 16px;
@@ -284,6 +326,12 @@ h1 {
   padding: 20px;
   box-shadow: 0 10px 24px rgba(14, 42, 37, 0.06);
   animation: fadeUp 0.7s ease both;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(14, 42, 37, 0.08);
 }
 
 .section-head p {
@@ -463,6 +511,7 @@ h1 {
 
   .hero-grid,
   .metric-strip,
+  .highlight-list,
   .services-grid,
   .experience-grid,
   .grid-two {
